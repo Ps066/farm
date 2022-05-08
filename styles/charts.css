@@ -1,0 +1,45 @@
+body{
+    background-color: #ccc;
+    
+}
+.charts{
+    margin: 10px;
+    
+}
+.mytabs{
+    background-color: white;
+    border-radius: 9px;
+    margin: 10px;
+    padding: 25px;
+}
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin:20px;
+    padding: 25px;
+}
+.tabs input[type="radio"]{
+    display:none;
+}
+.tabs label{
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+
+}
+
+.tabs .mytabs{
+    width: 100%;
+    padding:20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+
+.tabs input[type='radio']:checked + label + .mytabs {
+    display: block;
+}
+.container{
+    padding-left: 50px;
+}

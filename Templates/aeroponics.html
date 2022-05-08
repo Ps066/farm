@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&family=Caveat&family=Concert+One&family=Fredoka+One&family=Lobster+Two&family=Mr+Bedfort&family=Neucha&family=Oleo+Script:wght@700&family=Ubuntu:wght@300&display=swap');
+        </style>
+</head>
+<style>
+    .title{
+        margin: 0px;
+        padding: 50px;
+        font-size: xx-large;
+        text-align: center;
+        background-color: aquamarine;
+        font-weight: bold;
+        border-radius: 7px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 900;
+       
+     }
+     .imgcontainer{
+         align-items: center;
+         align-content: center;
+         align-self: center;
+         
+
+     }
+    .heading{
+        background-attachment: fixed;
+        background-color:#66ff99;
+        margin:15px;
+        padding:10px;
+        border-radius: 7px;
+
+        width: fit-content;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: xx-large;
+    } 
+    .paragraph{
+        font-size:  x-large;
+    } 
+    .heading2{
+        background-attachment: fixed;
+        background-color:#66ff99;
+        margin:10px;
+        padding:5px;
+        border-radius: 7px;
+        width: fit-content;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: xx-large;
+
+    }
+    .img1{
+        width: 900px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  
+
+       background-color: cadetblue;
+    
+    }
+    .img2{
+        padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: cadetblue;
+}
+ .bullets{
+    font-size: x-large;
+    break-after: always;
+}
+li {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 70px;
+  }
+
+  li a:hover:not(#active) {
+    background-color: #6abadeba;
+  }
+  #active {
+    background-color: #04AA6D;
+  }
+
+
+/* .container{
+    top: -10px;
+} */
+
+    
+</style>
+<body>
+    <div class="navbar">
+         
+        <ul>
+           <li><a href="{{url_for('home')}}" >Home</a></li>
+           <li><a href="{{url_for('aeroponics')}}" id="active">Aeroponics</a></li>
+           <li><a href="{{url_for('hydroponics')}}">Hydrophonic</a></li>
+           <li><a href="about.asp">About</a></li>
+           <li></li>
+        </ul>
+        
+     </div>
+     <br>
+
+     <br>
+     <div class="container">        
+    <br>
+    <h1 class="title">Areoponoics System</h1>
+    <h3 class="heading"> What is  Areoponics System?</h3>
+    <p class="paragraph">
+        It means growing plants in air or mist based environment instead of using soil for the same. It can be said to be related to hydroponics as the nutrients are delivered to the plants via water. However, in actuality, there isn’t any growing medium.
+    </p>
+    <div class="imgcontainer">
+    <img class="img1" src="https://greencamp.com/wp-content/uploads/2017/09/aeroponics-illustration-02.jpg" alt="Error">
+    </div>
+    <h2 class="heading2">How does Aeroponic System work?</h2>
+    <p class="paragraph">
+        <div>
+        <li class="bullets">Well, the plants are suspended in a closed or semi-closed environment, with the root section separated from the leaves and the canopy.</li>
+        <br>
+        <li class="bullets">The roots are then sprayed with a mist consisting of various nutrients that are required for growth.</li>
+        <br>
+        <li class="bullets">The plants are held in place by a frame at the top of an enclosure using either small baskets or foam plugs that grasp the stems gently but firmly, allowing the roots to grow unfettered into the chamber below while the crowns grow upward.</li>
+        <br>
+        <li class="bullets">The root chamber is an enclosed container that needs to keep out light as well as pests while keeping humidity in, yet also allows some fresh air to enter so the roots will be sure to have plenty of oxygen.</li>
+        <br>
+        <li class="bullets">The nutrient solution is pumped from a reservoir through the misters or sprayers at regular intervals so the roots are fed and kept from drying out. In advanced systems, the sprinklers are set to come on for several seconds and then turned off for a few minutes, so this on-off cycle will occur hundreds of times a day.</li>
+       <br>
+    </div>
+       <div>
+
+        <br>
+        <h2 class="heading2">How does Aeroponic System work?</h2>
+       <h6 class="heading" > Why Choose An Aeroponics System? </h6>
+    </div>
+       <p class="paragraph">
+        One of the main advantages of choosing an aeroponics system is that you can grow plants very quickly. With air as the medium, roots have greater access to growth-stimulating oxygen than other systems provide. Additionally, by growing plants in air, there’s nothing inhibiting a plant’s expansion, so they don’t need to use up any energy struggling to push their roots through a physical medium.
+       </p>
+       <div class="imgcontainer">
+       <img class="img2"  src="https://th.bing.com/th/id/OIP.EWCTX2EtLdN_nS0_U-MZigHaEH?pid=ImgDet&rs=1https://th.bing.com/th/id/OIP.EWCTX2EtLdN_nS0_U-MZigHaEH?pid=ImgDet&rs=1" alt="Error">
+    </div>
+
+    </p>
+</div>
+</body>
+</html>

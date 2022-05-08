@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Image as link</title>
+      <link rel="stylesheet" type="text/css" href="../styles/home_page.css"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="navbar">
+         
+         <ul>
+            <li><a href="{{url_for('home')}}" id="active">Home</a></li>
+            <li><a href="{{url_for('aeroponics')}}">Aeroponics</a></li>
+            <li><a href="{{url_for('hydroponics')}}">Hydrophonic</a></li>
+            <li><a href="about.asp">About</a></li>
+            <li></li>
+         </ul>
+         
+      </div>
+
+      <br>
+
+      <div>
+         <br>
+      
+         <p> The following image works as a link:</p><br>
+      <a href="aeroponics.html">
+         <img alt="click here" src="C:\Users\abc\Desktop\Mini_Project\aeroponics.jpg"
+         width="150" height="70"><br>
+     <a href="drone.html">
+         <img alt="click here" src="C:\Users\abc\Desktop\Mini_Project\drones.jpg"
+            width="150" height="70"><br>
+     <a href="Hydrophonics.html">
+         <img alt="click here" src="C:\Users\abc\Desktop\Mini_Project\Hydro.jpg"
+                width="150" height="70"><br>
+    
+
+      </a></div>
+   
+      <style>
+         body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+} 
+.navbar{
+    display: inline-grid;
+    
+
+}
+.navitems{
+   
+    background-color: aquamarine;
+    display:inline;
+
+
+}
+li {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 70px;
+  }
+
+  li a:hover:not(#active) {
+    background-color: #6abadeba;
+  }
+  #active {
+    background-color: #04AA6D;
+  }
+      </style>
+   </body>
+</html>
